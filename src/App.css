@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins';
+    justify-content: center;
+}
+
+.App h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: 48px;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 93px;
+    width: 760px;
+}
+
+.card-cell {
+    align-items: center;
+    display: flex;
+    height: 119px;
+    justify-content: center;
+    width: 95px;
+}
+
+.card {
+    align-items: center;
+    background-color: white;
+    border: 0.5px solid #CDCDCD;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0);
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    height: 104px;
+    justify-content: center;
+    line-height: 36px;
+    transition: all 0.5s ease;
+    width: 80px;
+}
+
+.card:hover {
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.card.open {
+    border: 1px solid #0A0A0C;
+    color: black;
+}
+
+.card.active {
+    border: 0.5px solid #ED5517;
+    color: black;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.card.open-first {
+    border: 1px solid #0A0A0C;
+    color: black;
+}
